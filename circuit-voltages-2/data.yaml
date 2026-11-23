@@ -1,0 +1,17 @@
+names:
+- GND
+- IDC
+- IDC_I
+- R
+- VDC
+- VDC_I
+nc: 6
+roboflow:
+  license: CC BY 4.0
+  project: circuit-voltages
+  url: https://universe.roboflow.com/roboflow-100/circuit-voltages/dataset/2
+  version: 2
+  workspace: roboflow-100
+test: ../test/images
+train: ../train/images
+val: ../valid/images
