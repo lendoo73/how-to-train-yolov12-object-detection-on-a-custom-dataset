@@ -8,7 +8,13 @@ The project uses the [Circuit Voltages dataset, version 2](https://universe.robo
 
 ## Environment
 
-Install the packages listed in `requirements.txt` in a Python environment, then open `train_yolov12_object_detection_model.ipynb` with Jupyter. The environment file is a snapshot of the project's local pinned dependencies; some packages are transitive dependencies rather than imports used directly by the notebook.
+Install the packages listed in `requirements.txt` in a Python environment:
+
+```shell
+pip install -r requirements.txt
+```
+
+Then open `train_yolov12_object_detection_model.ipynb` with Jupyter. The environment file is a snapshot of the project's local pinned dependencies; some packages are transitive dependencies rather than imports used directly by the notebook.
 
 Set `ROBOFLOW_API_KEY` in a local `.env` file when downloading a dataset from Roboflow. Never commit `.env` or publish API keys.
 
