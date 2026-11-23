@@ -18,6 +18,16 @@ Then open `train_yolov12_object_detection_model.ipynb` with Jupyter. The environ
 
 Set `ROBOFLOW_API_KEY` in a local `.env` file when downloading a dataset from Roboflow. Never commit `.env` or publish API keys.
 
+## Trained checkpoint
+
+The trained YOLOv12s checkpoint is available at [`runs/detect/train/weights/best.pt`](runs/detect/train/weights/best.pt) (18.9 MB). Load it with the YOLOv12-compatible Ultralytics package pinned in `requirements.txt`:
+
+```python
+from ultralytics import YOLO
+
+model = YOLO("runs/detect/train/weights/best.pt")
+```
+
 ## Publication notes
 
-The notebook is based on Roboflow's notebook linked above. Verify its redistribution terms before publishing a copy. Model checkpoints and training outputs are local artifacts; verify their redistribution terms before sharing them.
+The notebook is based on Roboflow's notebook linked above and is included with permission. This repository includes the trained `best.pt` checkpoint; other checkpoints and training outputs remain local-only.
