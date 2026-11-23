@@ -30,4 +30,4 @@ model = YOLO("runs/detect/train/weights/best.pt")
 
 ## Publication notes
 
-The notebook is based on Roboflow's notebook linked above and is included with permission. This repository includes the trained `best.pt` checkpoint; other checkpoints and training outputs remain local-only.
+The notebook is based on Roboflow's notebook linked above and is included with permission. This repository includes the trained `best.pt` checkpoint and the `img/` sample images, which the user confirmed may be redistributed; other checkpoints and training outputs remain local-only.
